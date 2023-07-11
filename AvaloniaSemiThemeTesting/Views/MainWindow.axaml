@@ -1,0 +1,62 @@
+<Window
+    Icon="/Assets/avalonia-logo.ico"
+    MinHeight="360"
+    MinWidth="640"
+    Title="XIVToolkit"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="AvaloniaSemiThemeTesting.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:AvaloniaSemiThemeTesting.Views.Pages"
+    xmlns:vm="using:AvaloniaSemiThemeTesting.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid ColumnDefinitions="Auto,*,Auto">
+            <StackPanel Margin="10,10,0,10" Orientation="Horizontal">
+                <TextBlock
+                    FontSize="17"
+                    FontWeight="Bold"
+                    Margin="0,0,10,0"
+                    Text="{Binding CharacterName}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    FontSize="17"
+                    Text="{Binding CharacterServer}"
+                    TextAlignment="Center" />
+            </StackPanel>
+
+            <Image
+                Grid.Column="2"
+                MaxWidth="64"
+                Source="/Assets/CharacterHeadPicture.png" />
+        </Grid>
+
+
+
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Home" />
+            <TabItem Header="Price Check">
+                <ToolTip.Tip>Efficiently check the marketboard prices of all items in your GarlandTools list!</ToolTip.Tip>
+                <pages:PriceCheck />
+            </TabItem>
+            <TabItem Header="Character">
+                <ToolTip.Tip>Import your character data here for greater access to your tools</ToolTip.Tip>
+                <pages:Character />
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+
+</Window>

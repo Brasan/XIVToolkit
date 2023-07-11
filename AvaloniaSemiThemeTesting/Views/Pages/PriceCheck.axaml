@@ -1,0 +1,36 @@
+﻿<UserControl
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="AvaloniaSemiThemeTesting.Views.Pages.PriceCheck"
+    x:DataType="vm:PriceCheckViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:AvaloniaSemiThemeTesting.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.DataContext>
+        <vm:PriceCheckViewModel />
+    </Design.DataContext>
+
+    <Grid ColumnDefinitions="Auto, *">
+        <Expander ExpandDirection="Right" Header="Input">
+            <Grid RowDefinitions="*, Auto">
+                <TextBox
+                    FontSize="10"
+                    Grid.Row="0"
+                    MaxWidth="250"
+                    Text="{Binding GarlandToolsCsvInput}"
+                    TextWrapping="Wrap"
+                    Watermark="Paste Garlandtools list data here" />
+                <Button Content="Get price data" Grid.Row="1" />
+            </Grid>
+        </Expander>
+
+
+
+        <DataGrid Grid.Column="1" ItemsSource="{Binding itemPriceData}" />
+        <!--  Use GarlandtoolsData class to populate this  -->
+    </Grid>
+
+</UserControl>
