@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
-using AvaloniaSemiThemeTesting.Models;
-using AvaloniaSemiThemeTesting.Models.API;
+using XIVToolkit.Models;
+using XIVToolkit.Models.API;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 
 
-namespace AvaloniaSemiThemeTesting.ViewModels;
+namespace XIVToolkit.ViewModels;
 
 public class PriceCheckViewModel : ObservableObject
 {

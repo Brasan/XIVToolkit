@@ -1,4 +1,4 @@
-﻿namespace AvaloniaSemiThemeTesting.Models;
+﻿namespace XIVToolkit.Models;
 
 public class ItemPriceData
 {

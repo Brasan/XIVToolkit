@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AvaloniaSemiThemeTesting.Models.API;
+namespace XIVToolkit.Models.API;
 
 public static class UniversalisAPI
 {

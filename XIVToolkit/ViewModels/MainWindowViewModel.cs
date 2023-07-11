@@ -1,6 +1,6 @@
-﻿using AvaloniaSemiThemeTesting.Views;
+﻿using XIVToolkit.Views;
 
-namespace AvaloniaSemiThemeTesting.ViewModels;
+namespace XIVToolkit.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

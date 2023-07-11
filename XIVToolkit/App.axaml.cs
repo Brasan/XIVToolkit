@@ -3,10 +3,10 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
-using AvaloniaSemiThemeTesting.ViewModels;
-using AvaloniaSemiThemeTesting.Views;
+using XIVToolkit.ViewModels;
+using XIVToolkit.Views;
 
-namespace AvaloniaSemiThemeTesting;
+namespace XIVToolkit;
 
 public partial class App : Application
 {

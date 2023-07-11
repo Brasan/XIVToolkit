@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using AvaloniaSemiThemeTesting.ViewModels;
+using XIVToolkit.ViewModels;
 
-namespace AvaloniaSemiThemeTesting;
+namespace XIVToolkit;
 
 public class ViewLocator : IDataTemplate
 {

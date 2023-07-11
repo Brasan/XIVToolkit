@@ -1,6 +1,6 @@
 ﻿using System.Dynamic;
 
-namespace AvaloniaSemiThemeTesting.Models.PriceCheck;
+namespace XIVToolkit.Models.PriceCheck;
 
 public class ItemPriceLookupResult
 {

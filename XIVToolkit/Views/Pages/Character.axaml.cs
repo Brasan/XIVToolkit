@@ -2,9 +2,9 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Markup.Xaml;
-using AvaloniaSemiThemeTesting.ViewModels;
+using XIVToolkit.ViewModels;
 
-namespace AvaloniaSemiThemeTesting.Views.Pages;
+namespace XIVToolkit.Views.Pages;
 
 public partial class Character : UserControl
 {

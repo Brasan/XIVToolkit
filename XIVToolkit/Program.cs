@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace AvaloniaSemiThemeTesting;
+namespace XIVToolkit;
 
 class Program
 {

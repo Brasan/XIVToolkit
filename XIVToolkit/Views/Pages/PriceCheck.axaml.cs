@@ -3,9 +3,9 @@ using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
-using AvaloniaSemiThemeTesting.ViewModels;
+using XIVToolkit.ViewModels;
 
-namespace AvaloniaSemiThemeTesting.Views.Pages;
+namespace XIVToolkit.Views.Pages;
 
 public partial class PriceCheck : UserControl
 {

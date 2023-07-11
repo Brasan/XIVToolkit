@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace AvaloniaSemiThemeTesting.ViewModels;
+namespace XIVToolkit.ViewModels;
 
 public class CharacterViewModel : ObservableObject
 {
