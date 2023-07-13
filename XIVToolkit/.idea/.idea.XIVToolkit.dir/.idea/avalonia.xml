@@ -3,8 +3,12 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="XIVToolkit.csproj" />
         <entry key="Views/MainWindow.axaml" value="XIVToolkit.csproj" />
+        <entry key="Views/Pages/Character.axaml" value="XIVToolkit.csproj" />
+        <entry key="Views/Pages/Checklist.axaml" value="XIVToolkit.csproj" />
         <entry key="Views/Pages/PriceCheck.axaml" value="XIVToolkit.csproj" />
+        <entry key="Views/Pages/Settings.axaml" value="XIVToolkit.csproj" />
       </map>
     </option>
   </component>

@@ -29,7 +29,7 @@
 
 
 
-        <DataGrid Grid.Column="1" ItemsSource="{Binding itemPriceData}" />
+        <!--<DataGrid Grid.Column="1" ItemsSource="{Binding itemPriceData}" />-->
         <!--  Use GarlandtoolsData class to populate this  -->
     </Grid>
 

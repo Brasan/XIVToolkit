@@ -24,6 +24,7 @@
     <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
     <PackageReference Include="Semi.Avalonia" Version="11.0.0" />
+    <PackageReference Include="Semi.Avalonia.DataGrid" Version="11.0.0" />
   </ItemGroup>
 
 
