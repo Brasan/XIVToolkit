@@ -1,21 +1,22 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Primitives;
 using Avalonia.Markup.Xaml;
+using XIVToolkit.ViewModels;
 
 namespace XIVToolkit.Views.Pages;
 
-public partial class Checklist : Window
+public partial class Checklist : UserControl
 {
     public Checklist()
     {
         InitializeComponent();
-#if DEBUG
-        this.AttachDevTools();
-#endif
     }
 
-    private void InitializeComponent()
+    protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
     {
-        AvaloniaXamlLoader.Load(this);
+        base.OnApplyTemplate(e);
+        CharacterViewModel? vm = new CharacterViewModel();
+        DataContext = vm;
     }
 }

@@ -46,19 +46,15 @@
 
 
         <TabControl Grid.Row="1">
-            <TabItem Header="Home"/>
+
             <TabItem Header="Character">
-                <ToolTip.Tip>Import your character data here for greater access to your tools</ToolTip.Tip>
                 <pages:Character />
             </TabItem>
             <TabItem Header="Price Check">
                 <ToolTip.Tip>Efficiently check the marketboard prices of all items in your GarlandTools list!</ToolTip.Tip>
                 <pages:PriceCheck />
             </TabItem>
-            <TabItem Header="Checklist">
-                <ToolTip.Tip>Keep track of your various in-game tasks</ToolTip.Tip>
-                <pages:Checklist />
-            </TabItem>
+            <TabItem Header="Checklist" />
             <TabItem Header="Settings">
                 <pages:Settings />
             </TabItem>

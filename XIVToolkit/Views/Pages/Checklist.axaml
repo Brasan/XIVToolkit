@@ -1,14 +1,24 @@
-﻿<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="XIVToolkit.Views.Pages.Checklist"
-        Title="Checklist">
-    <Grid Name="ChecklistGrid" RowDefinitions="*,*,*">
-        <CheckBox>ett</CheckBox>
-        <CheckBox Grid.Row="1">två</CheckBox>
-        <CheckBox Grid.Row="2">tre</CheckBox>
-        
-    </Grid>
-</Window>
+﻿<UserControl
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="XIVToolkit.Views.Pages.Checklist"
+    x:DataType="vm:ChecklistViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:XIVToolkit.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.DataContext>
+        <vm:ChecklistViewModel />
+    </Design.DataContext>
+    <DataGrid
+        AutoGenerateColumns="True"
+        BorderBrush="Gray"
+        BorderThickness="1"
+        GridLinesVisibility="All"
+        IsReadOnly="True"
+        ItemsSource="{Binding People}"
+        Margin="20" />
+
+</UserControl>
